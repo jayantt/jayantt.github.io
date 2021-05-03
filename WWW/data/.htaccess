@@ -1,0 +1,6 @@
+<FilesMatch "liff.pdf">
+AuthName "Member Only"
+AuthType WebAuth
+AuthUserFile /afs/ir/users/j/a/jayantt/.htpasswd
+require valid-user
+</FilesMatch>

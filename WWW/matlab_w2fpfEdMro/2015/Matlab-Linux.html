@@ -1,0 +1,104 @@
+
+<html>
+
+<head>
+<title>MATLAB Linux Installation for IVMS Group</title>
+</head>
+
+<body>
+
+<font face="Arial" size="5" color="red">
+     MATLAB Linux Installation for IVMS Group
+</font>
+<br/><br/>
+
+<font face="Arial" size="3" color="black">
+     Please keep the following information within the group. We currently have enough licenses for just our group. 
+</font>
+<br/><br/><br/>
+
+<font face="Arial" size="4" color="red">
+     Step 1: Download the Software
+</font>
+<br/><br/>
+
+<font face="Arial" size="3" color="black">
+	(1) Go to <a href="http://www.mathworks.com">http://www.mathworks.com</a>
+	<br/><br/>
+	(2) Click "Log In" at the top right corner.
+	<br/><br/>
+	(3) Enter the following log-in information:
+	<br/>
+	&nbsp &nbsp &nbsp Email Address = hchen2@stanford.edu
+	<br/>
+	&nbsp &nbsp &nbsp Password = zvGxt80e
+	<br/><br/>
+	(4) Click on "My Account" at the top right corner.
+	<br/><br/>
+	(5) Find the box for "R2014b" in the middle of the page and click "Download Now".
+	<br/><br/>
+	(6) Find the box for "Licensed Products" and click "Download".
+	<br/><br/>
+	(7) Select the platform of your computer, if it is not automatically detected. Select "I have JRE" to indicate you have Java installed, if Java is not automatically detected (Java download site: http://java.com/en). Make sure MATLAB, Simulink, and all toolboxes are selected in the Products panel before clicking "Download R2014b Products" to initiate the download.
+	<br/><br/>
+	(8) In the Download Agent that pops up, select a temporary folder where to download the files (e.g., /home/YourName/Downloads). Click "Next". Click "Download".
+	<br/><br/>
+	(9)  After all the components are downloaded, disable the "Start Installer" option before you click "Finish". 
+</font>
+<br/></br><br/>
+
+<font face="Arial" size="4" color="red">
+     Step 2: Install the Software
+</font>
+<br/><br/>
+
+<font face="Arial" size="3" color="black">
+     (1)  Go to the temporary folder where MATLAB has been downloaded. Execute "unzip matlab_R2014b_glnxa64_installer.zip" and then execute "sudo ./install".
+     <br/><br/>
+     (2)  Choose "Install using the Internet" and click "Next".
+     <br/><br/>
+     (3) Choose "Log in to my MathWorks account" and input:
+	<br/>
+	&nbsp &nbsp &nbsp Email Address = hchen2@stanford.edu
+	<br/>
+	&nbsp &nbsp &nbsp Password = zvGxt80e
+	<br/><br/>
+     (4)  Accept the license agreement and click "Next".
+     <br/><br/>
+     (5)  Choose the retrieved Matlab license "Total Academic Headcount Campus".
+     <br/><br/>
+     (6)  Choose all Matlab products and packages for installation.
+     <br/><br/>
+     (7)  Select where MATLAB should be installed on your machine and click "Next". Review the settings and click "Install".
+     <br/><br/>
+     (8) Agree to activate MATLAB and click "Next". The activation key is:
+     <br/> 
+     &nbsp &nbsp &nbsp 18205-96482-83269-95785-65747
+     <br/><br/>
+     (9) Go to /usr/bin or /usr/local/bin (whichever is in your PATH) and create a symbolic link for "matlab" and "mex": 
+     <br/>
+     &nbsp &nbsp &nbsp sudo ln -s YOUR_MATLAB_INSTALL_FOLDER/R2014b/bin/matlab matlab
+     <br/>
+     &nbsp &nbsp &nbsp sudo ln -s YOUR_MATLAB_INSTALL_FOLDER/R2014b/bin/mex mex
+     <br/>
+     &nbsp &nbsp &nbsp After creating this symbolic link, MATLAB can be launched from the command line by typing "matlab".
+     <br/><br/>
+     (10)  After installation, you can delete the temporary folder. This action will not affect your installation.
+     <br/>
+</font>
+<br/><br/>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8436897-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+
+</html>
+
